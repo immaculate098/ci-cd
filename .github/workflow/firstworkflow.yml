@@ -7,7 +7,13 @@ jobs:
     steps:
     - run : echo "make the dough"
     - run : echo "make rounds"
-    - run : echo "Group memebers : Burani and Immy"
     - name: Checkout code from repo
       uses: actions/checkout@v2
-    - name: Set up Python 3.8
+    - run : echo "add sugar"
+    - run : echo "add blueband"
+    - name: List files above
+    run: 
+       ls ${{github.workspace}}
+    - run : echo "Group memebers : Burani and Immy"
+    
+    
