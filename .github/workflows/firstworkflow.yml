@@ -13,7 +13,7 @@ jobs:
     - name: Make rounds
       run: echo "make rounds"
     - name: Checkout code from repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
     - name: Add sugar
       run: echo "add sugar"
     - name: Add blueband
@@ -22,5 +22,3 @@ jobs:
       run: ls ${{ github.workspace }}
     - name: Group members
       run: echo "Group members: Burani and Immy"
-
-    
