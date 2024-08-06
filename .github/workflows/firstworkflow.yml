@@ -1,5 +1,4 @@
-name: Burani and Immy
-run-name: Testing Github Actions
+name: Minimal Test
 
 on:
   push:
@@ -8,17 +7,7 @@ jobs:
   Test-GithubActions:
     runs-on: ubuntu-latest
     steps:
-    - name: Make the dough
-      run: echo "make the dough"
-    - name: Make rounds
-      run: echo "make rounds"
-    - name: Checkout code from repo
-      uses: actions/checkout@v3
-    - name: Add sugar
-      run: echo "add sugar"
-    - name: Add blueband
-      run: echo "add blueband"
-    - name: List files above
-      run: ls ${{ github.workspace }}
-    - name: Group members
-      run: echo "Group members: Burani and Immy"
+      - name: Checkout code from repo
+        uses: actions/checkout@v2
+      - name: Say Hello
+        run: echo "Hello, World!"
