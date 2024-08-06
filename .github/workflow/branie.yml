@@ -1,0 +1,13 @@
+name: Burani and Immy
+run-name: Testing Github Actions
+on : [push]
+jobs:
+  Test-GithunActions:
+    runs-on: ubuntu-latest
+    steps:
+    - run : echo "make the dough"
+    - run : echo "make rounds"
+    - run : echo "Group memebers : Burani and Immy"
+    - name: Checkout code from repo
+      uses: actions/checkout@v2
+    - name: Set up Python 3.8
